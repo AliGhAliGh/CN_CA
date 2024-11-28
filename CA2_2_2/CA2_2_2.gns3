@@ -199,38 +199,6 @@
             },
             {
                 "filters": {},
-                "link_id": "d52c12a8-a1be-4b4a-9f40-0d847fb7e563",
-                "link_style": {},
-                "nodes": [
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "f0/0",
-                            "x": 43,
-                            "y": 60
-                        },
-                        "node_id": "3d4d4c3c-c0df-4d81-bd1c-4e7fbb8f9384",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 0,
-                        "label": {
-                            "rotation": 0,
-                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "e5",
-                            "x": 25,
-                            "y": -22
-                        },
-                        "node_id": "e4e2e69c-d469-41b8-9f95-564b93431900",
-                        "port_number": 5
-                    }
-                ],
-                "suspend": false
-            },
-            {
-                "filters": {},
                 "link_id": "88eb8140-30bf-42ff-9506-20691e046cc7",
                 "link_style": {},
                 "nodes": [
@@ -256,6 +224,38 @@
                             "y": 30
                         },
                         "node_id": "6d88b681-7575-4521-8764-3eb765130e68",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "7f70dfcc-a32b-4f5a-a839-3907d541e990",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e5",
+                            "x": 25,
+                            "y": -22
+                        },
+                        "node_id": "e4e2e69c-d469-41b8-9f95-564b93431900",
+                        "port_number": 5
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 43,
+                            "y": 60
+                        },
+                        "node_id": "3d4d4c3c-c0df-4d81-bd1c-4e7fbb8f9384",
                         "port_number": 0
                     }
                 ],
@@ -343,12 +343,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Switch1",
-                    "x": -3,
+                    "text": "s",
+                    "x": 27,
                     "y": -25
                 },
                 "locked": false,
-                "name": "Switch1",
+                "name": "s",
                 "node_id": "e4e2e69c-d469-41b8-9f95-564b93431900",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
@@ -356,40 +356,46 @@
                 "properties": {
                     "ports_mapping": [
                         {
+                            "ethertype": "",
                             "name": "Ethernet0",
                             "port_number": 0,
                             "type": "access",
-                            "vlan": 1
+                            "vlan": 30
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet1",
                             "port_number": 1,
                             "type": "access",
-                            "vlan": 1
+                            "vlan": 30
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet2",
                             "port_number": 2,
                             "type": "access",
-                            "vlan": 1
+                            "vlan": 40
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet3",
                             "port_number": 3,
                             "type": "access",
-                            "vlan": 1
+                            "vlan": 40
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet4",
                             "port_number": 4,
                             "type": "access",
-                            "vlan": 1
+                            "vlan": 40
                         },
                         {
+                            "ethertype": "",
                             "name": "Ethernet5",
                             "port_number": 5,
-                            "type": "access",
-                            "vlan": 1
+                            "type": "dot1q",
+                            "vlan": 2
                         },
                         {
                             "name": "Ethernet6",
